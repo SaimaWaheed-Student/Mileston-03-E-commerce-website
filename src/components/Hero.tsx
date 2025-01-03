@@ -1,9 +1,23 @@
 import Link from "next/link";
+import Image from 'next/image';
 
 const Hero = () => {
     return (
+        
         <section className="relative bg-gray-400 text-white p-2">
             <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        
+        {/* Welcome heading ke upar image */}
+        <div>
+        <Image 
+          src="/pic1.jpg"
+          alt="Elegant Finds Shop Banner" 
+          width={1800} 
+          height={800} 
+          style={{ display: 'block', margin: '0 auto' }} 
+        />
+        </div>
+      
                 <div className="relative py-16 md:py-24">
                     {/* Decorative SVG */}
                     <div className="absolute inset-0 overflow-hidden">
